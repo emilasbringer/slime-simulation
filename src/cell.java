@@ -38,11 +38,9 @@ public class cell {
         this.x = x;
     }
 
-    public void setAngle(float angle) {
-        this.angle = angle;
-    }
+    public void setAngle(float angle) {this.angle = angle;}
 
-    public void reverseAngle() {
-        this.angle = angle + 180;
+    public void alterAngle(float inputAngle) {
+        this.angle = (float) (angle + inputAngle);
     }
 }

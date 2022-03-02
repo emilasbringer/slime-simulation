@@ -23,7 +23,6 @@ public class Controller implements Runnable, ActionListener {
     private ScreenRenderer view;
     private SimulationModel model;
 
-
     public Controller() {
         view = new ScreenRenderer(width, height, scale);
         model = new SimulationModel(width, height, scale);
@@ -39,8 +38,6 @@ public class Controller implements Runnable, ActionListener {
         frame.requestFocus();
 
     }
-
-
 
     public synchronized void start() {
         running = true;

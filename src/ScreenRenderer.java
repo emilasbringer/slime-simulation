@@ -49,7 +49,7 @@ public class ScreenRenderer extends Canvas {
     }
 
     public void draw(ArrayList<cell> array) {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < array.size(); i++) {
             screen.draw( (int) Math.floor(array.get(i).getX()),(int) Math.floor(array.get(i).getY()),0xFFFFFF);
         }
     }
